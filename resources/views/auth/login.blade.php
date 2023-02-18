@@ -16,31 +16,31 @@
 
                 <!-- Email Address -->
                 <div>
-                    <x-input-label for="username" :value="__('Benutzername')" />
-                    <x-text-input id="username" class="block mt-1 w-full" type="text" name="username"
+                    <x-input.label for="username" :value="__('Benutzername')" />
+                    <x-input.text id="username" class="block mt-1 w-full" type="text" name="username"
                         :value="old('username')" required autofocus autocomplete="username" />
-                    <x-input-error :messages="$errors->get('username')" class="mt-2" />
+                    <x-input.error :messages="$errors->get('username')" class="mt-2" />
                 </div>
 
                 <!-- Password -->
                 <div class="mt-4">
-                    <x-input-label for="password" :value="__('Passwort')" />
+                    <x-input.label for="password" :value="__('Passwort')" />
 
-                    <x-text-input id="password" class="block mt-1 w-full" type="password" name="password" required
+                    <x-input.text id="password" class="block mt-1 w-full" type="password" name="password" required
                         autocomplete="current-password" />
 
-                    <x-input-error :messages="$errors->get('password')" class="mt-2" />
+                    <x-input.error :messages="$errors->get('password')" class="mt-2" />
                 </div>
 
-                <!-- Remember Me
+                <!-- Remember Me -->
                 <div class="block mt-4">
                     <label for="remember_me" class="inline-flex items-center">
                         <input id="remember_me" type="checkbox"
-                            class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500"
+                            class="rounded border-gray-300 text- shadow-sm focus:ring-sdarkblue"
                             name="remember">
-                        <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
+                        <span class="ml-2 text-sm text-gray-600">{{ __('Login merken') }}</span>
                     </label>
-                </div>-->
+                </div>
 
                 <div class="flex items-center justify-end mt-4">
 

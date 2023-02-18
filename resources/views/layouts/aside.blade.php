@@ -13,9 +13,7 @@
                     </div>
                 </div>
 
-                <x-aside.link name="UTM's" href="{{ route('dashboard') }}" />
-
-                <x-aside.link name="Dienste" href="{{ route('dashboard') }}" />
+                <x-aside.link name="UTM's" href="{{ route('utm.index') }}" />
 
             </ul>
         </div>

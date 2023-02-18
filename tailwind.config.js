@@ -17,6 +17,7 @@ module.exports = {
         },
         colors: {
             'sdarkblue': '#0C2E5E',
+            'ssystemblue': '#01B0EC',
         },
     },
 

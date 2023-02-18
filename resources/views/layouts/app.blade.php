@@ -18,6 +18,8 @@
     </script>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    @livewireStyles
 </head>
 
 <body class="antialiased bg-gray-100 dark:bg-gray-900">
@@ -25,10 +27,11 @@
     @include('layouts.navigation')
     @include('layouts.aside')
 
-    <main>
+    <main class="mt-16 sm:ml-64">
         {{ $slot }}
     </main>
 
+    @livewireScripts
 </body>
 
 </html>

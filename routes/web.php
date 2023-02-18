@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\UTMController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,6 +28,17 @@ Route::middleware('auth')->group(function () {
     Route::get('/', function () {
         return view('welcome');
     })->name('dashboard');
+
+
+
+
+    //UTM
+    Route::get('/utm', [UTMController::class, 'index'])->name('utm.index');
+    Route::post('/utm', [UTMController::class, 'store'])->name('utm.store');
+    Route::get('/utm/create', [UTMController::class, 'create'])->name('utm.create');
+    Route::get('/utm/{utm}', [UTMController::class, 'edit'])->name('utm.edit');
+    Route::patch('/utm/{utm}', [UTMController::class, 'update'])->name('utm.update');
+    Route::delete('/utm/{utm}', [UTMController::class, 'destroy'])->name('utm.destroy');
 
 
 

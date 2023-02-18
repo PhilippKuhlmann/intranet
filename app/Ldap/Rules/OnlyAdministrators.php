@@ -14,7 +14,7 @@ class OnlyAdministrators extends Rule
      */
     public function isValid()
     {
-        $administrators = Group::find('cn=Administrators,dc=local,dc=com');
+        $administrators = Group::find('cn=Administrators,dc=stadel,dc=local');
 
         return $this->user->groups()->recursive()->exists($administrators);
     }
