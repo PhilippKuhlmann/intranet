@@ -11,7 +11,7 @@
 
 
         <div class="flex justify-center items-center">
-            <a href="{{ route('utm.create') }}" class="text-white bg-blue-800  rounded-sm py-2 px-4">Neu</a>
+            <x-input.linkbutton link="{{ route('utm.create') }}" label="Neu" />
         </div>
 
     </div>
