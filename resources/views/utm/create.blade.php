@@ -2,7 +2,7 @@
 
     <div class="p-5 flex flex-col sm:max-w-md">
         <div class="">
-            <span class="text-2xl">Neue UTM erstellen</span>
+            <span class="text-2xl dark:text-gray-100">Neue UTM erstellen</span>
         </div>
 
         <form method="POST" action="{{ route('utm.store') }}">

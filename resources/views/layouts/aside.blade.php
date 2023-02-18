@@ -11,12 +11,7 @@
                     Dashboard
                 </x-aside.link>
 
-                <div class="inline-flex items-center justify-center w-full">
-                    <hr class="w-64 h-0.5 my-4 bg-gray-200 border-0 rounded dark:bg-gray-700">
-                    <div class="absolute px-2 -translate-x-1/2 font-thin bg-sdarkblue left-1/2 dark:bg-gray-800">
-                        Technik
-                    </div>
-                </div>
+                <x-aside.seperator name="Technik" />
 
                 <x-aside.link href="{{ route('utm.index') }}">
                     <x-slot:svg>
