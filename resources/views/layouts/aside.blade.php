@@ -22,7 +22,7 @@
 
                 <x-aside.link href="{{ route('service.index') }}">
                     <x-slot:svg>
-                        <x-svg.fire class="h-6 w-6" />
+                        <x-svg.settings class="h-6 w-6" />
                     </x-slot:svg>
                     Dienste
                 </x-aside.link>

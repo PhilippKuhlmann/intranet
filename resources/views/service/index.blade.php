@@ -23,10 +23,10 @@
                                         </div>
                                         <div class="">
                                             <div
-                                                class="text-xl group-hover:text-blue-600 group-hover:dark:text-blue-700">
+                                                class="text-2xl group-hover:text-blue-600 group-hover:dark:text-blue-700">
                                                 {{ $service->name }}
                                             </div>
-                                            <div class="dark:text-gray-500">
+                                            <div class="text-sm text-gray-500">
                                                 {{ $service->description }}
                                             </div>
                                         </div>

@@ -2,7 +2,7 @@
 
     <div class="p-5 flex flex-col sm:max-w-md">
         <div class="">
-            <span class="text-2xl">Neuen Dienst anlegen</span>
+            <span class="text-2xl dark:text-gray-100">Neuen Dienst anlegen</span>
         </div>
 
         <form method="POST" action="{{ route('service.update', $service) }}" enctype="multipart/form-data" >
@@ -26,19 +26,19 @@
 
             <div class="mt-6 flex flex-col">
                 <x-input.label for="name" value="Name" />
-                <x-input.field id="name" name="name" autofocus="true" value="{{ old('name') ?? $service->name }}" />
+                <x-input.text id="name" type="text" name="name" autofocus="true" value="{{ old('name') ?? $service->name }}" />
                 <x-input.error :messages="$errors->get('name')" class="mt-2" />
             </div>
 
             <div class="mt-6 flex flex-col">
                 <x-input.label for="description" value="Beschreibung" />
-                <x-input.field id="description" name="description" value="{{ old('description') ?? $service->description }}" />
+                <x-input.text id="description" type="text" name="description" value="{{ old('description') ?? $service->description }}" />
                 <x-input.error :messages="$errors->get('description')" class="mt-2"  />
             </div>
 
             <div class="mt-6 flex flex-col">
                 <x-input.label for="url" value="URL" />
-                <x-input.field id="url" name="url" value="{{ old('url') ?? $service->url }}" />
+                <x-input.text id="url" type="text" name="url" value="{{ old('url') ?? $service->url }}" />
                 <x-input.error :messages="$errors->get('url')" class="mt-2" />
             </div>
 
