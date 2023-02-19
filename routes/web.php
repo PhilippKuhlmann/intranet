@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\UTMController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,7 +23,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth')->group(function () {
 
     Route::get('/dashboard', function () {
-        return view('dashboard');
+        return view('welcome');
     });
 
     Route::get('/', function () {
@@ -39,6 +40,14 @@ Route::middleware('auth')->group(function () {
     Route::get('/utm/{utm}', [UTMController::class, 'edit'])->name('utm.edit');
     Route::patch('/utm/{utm}', [UTMController::class, 'update'])->name('utm.update');
     Route::delete('/utm/{utm}', [UTMController::class, 'destroy'])->name('utm.destroy');
+
+    // Service
+    Route::get('/service', [ServiceController::class, 'index'])->name('service.index');
+    Route::post('/service', [ServiceController::class, 'store'])->name('service.store');
+    Route::get('/service/create', [ServiceController::class, 'create'])->name('service.create');
+    Route::get('/service/{service}', [ServiceController::class, 'edit'])->name('service.edit');
+    Route::patch('/service/{service}', [ServiceController::class, 'update'])->name('service.update');
+    Route::delete('/service/{service}', [ServiceController::class, 'destroy'])->name('service.destroy');
 
 
 
