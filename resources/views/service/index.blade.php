@@ -19,7 +19,7 @@
                                 <a href="{{ $service->url }}" target="_blank" class="w-full group p-3">
                                     <div class="flex flex-row">
                                         <div class="flex items-center w-14">
-                                            <img src="{{ $service->image }}" class="w-10" />
+                                            <img src="{{ asset($service->image) }}" class="w-10" />
                                         </div>
                                         <div class="">
                                             <div
