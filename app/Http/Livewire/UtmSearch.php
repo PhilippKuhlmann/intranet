@@ -14,9 +14,9 @@ class UtmSearch extends Component
     public function render()
     {
         if ($this->search) {
-            $utms = UTM::where('customer', 'like', '%'.$this->search.'%')->get();
+            $utms = UTM::where('customer', 'like', '%'.$this->search.'%')->orderBy('customer')->get();
         } else {
-            $utms = UTM::all();
+            $utms = UTM::orderBy('customer')->get();
         }
 
         return view('livewire.utm-search', [
